@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body align="center">
+    <h1 >TO-DO LIST</h1>
+    <form name="myForm" >
+        <input type="text" placeholder="Title" class="bod" id="title" required/>  
+        <br><br>
+         <textarea rows = "5" cols = "70" class="bod" id="description" placeholder="Description..."></textarea> 
+        <!-- <input type="text" placeholder="Description" id="description" rows="5" required/><br> -->
+        <div id="blank"></div>
+        <br>
+        <button type="button" id="btn" onclick="addd()" ><b>add</b></button><br><br><br>
+    </form>
+        <div id="addedtasks">
+            <div id="${c}" class="tasks" >
+                <div id="tit"> <b>Title</b></div>
+                <div id="des"> <b>Task Description</b></div>
+                <div><b>Status</b></div>
+               <b> Delete Task</b>
+            </div>
+        </div>
+	<script src="main.js"></script>
+</body>
+</html>
